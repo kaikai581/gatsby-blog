@@ -6,12 +6,14 @@ module.exports = {
       summary: `an enthusiast for data, algorithms, math, and python.`,
     },
     description: `A blog with things that I feel interesting.`,
-    siteUrl: `https://kaikai581.github.io/`,
+    siteUrl: `https://kaikai581.github.io/gatsby_blog`,
     social: {
       twitter: `kaikai581`,
     },
+    pathPrefix: `/gatsby_blog`,
   },
   plugins: [
+    `gatsby-plugin-offline`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
